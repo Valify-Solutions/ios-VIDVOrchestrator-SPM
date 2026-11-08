@@ -1,7 +1,7 @@
 // swift-tools-version:5.5
 import PackageDescription
 
-// Legacy VIDVOrchestrator (0.1.0). Module: VIDVIdentityKit — `import VIDVIdentityKit`.
+// Legacy VIDVOrchestrator (0.2.0). Module: VIDVOrchestrator — `import VIDVOrchestrator`.
 let package = Package(
     name: "VIDVOrchestrator",
     platforms: [
@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "VIDVOrchestrator",
-            targets: ["VIDVIdentityKit", "VIDVOrchestratorDependencies"]
+            targets: ["VIDVOrchestrator", "VIDVOrchestratorDependencies"]
         )
     ],
     dependencies: [
@@ -20,14 +20,14 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "VIDVIdentityKit",
-            url: "https://valify-public-sdks.s3.eu-central-1.amazonaws.com/VIDVOrchestrator/0.1.0/VIDVIdentityKit.zip",
-            checksum: "98ae4d1d40191205ae0020583ebac614e7874e405618cd0ad3305ee611fa48af"
+            name: "VIDVOrchestrator",
+            url: "https://valify-public-sdks.s3.eu-central-1.amazonaws.com/VIDVOrchestrator/0.2.0/VIDVOrchestrator.zip",
+            checksum: "97ef72f2966e18020c301a4a2810ba240eb21fb32de66d20746a18cd880f7662"
         ),
         .target(
             name: "VIDVOrchestratorDependencies",
             dependencies: [
-                .target(name: "VIDVIdentityKit"),
+                .target(name: "VIDVOrchestrator"),
                 .product(name: "VIDVLiveness", package: "VIDVLiveness-SPM"),
                 .product(name: "VIDVDocKit", package: "VIDVDocKit-SPM"),
                 .product(name: "VIDVOTP", package: "VIDVOtp-SPM"),
