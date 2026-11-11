@@ -1,7 +1,7 @@
 // swift-tools-version:5.5
 import PackageDescription
 
-// Legacy VIDVOrchestrator (0.2.0). Module: VIDVOrchestrator — `import VIDVOrchestrator`.
+// Legacy VIDVOrchestrator (0.2.1). Module: VIDVOrchestrator — `import VIDVOrchestrator`.
 let package = Package(
     name: "VIDVOrchestrator",
     platforms: [
@@ -15,7 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Valify-Solutions/VIDVLiveness-SPM.git", .exact("4.1.9")),
-        .package(url: "https://github.com/Valify-Solutions/VIDVDocKit-SPM.git", .exact("1.7.3")),
+        .package(url: "https://github.com/Valify-Solutions/VIDVDocKit-SPM.git", .exact("1.7.5")),
         .package(url: "https://github.com/Valify-Solutions/VIDVOtp-SPM.git", .exact("1.0.14")),
     ],
     targets: [
