@@ -13,15 +13,15 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/Valify-Solutions/ios-VIDVBiometrics-SPM.git", .exact("1.0.4")),
-        .package(url: "https://github.com/Valify-Solutions/VIDVDocKit-SPM.git", .exact("1.7.3")),
-        .package(url: "https://github.com/Valify-Solutions/VIDVOtp-SPM.git", .exact("1.0.14")),
+        .package(url: "https://github.com/Valify-Solutions/ios-VIDVBiometrics-SPM.git", .exact("1.1.0")),
+        .package(url: "https://github.com/Valify-Solutions/VIDVDocKit-SPM.git", .exact("2.1.0")),
+        .package(url: "https://github.com/Valify-Solutions/VIDVOtp-SPM.git", .exact("1.1.0")),
     ],
     targets: [
         .binaryTarget(
             name: "VIDVOrchestrator",
-            url: "https://valify-public-sdks.s3.eu-central-1.amazonaws.com/VIDVOrchestrator/1.1.0/VIDVOrchestrator.zip",
-            checksum: "ad0b58b37282036c464472028ca3df5c64532e5822e53b96ff33d0348d40d8cd"
+            url: "https://valify-public-sdks.s3.eu-central-1.amazonaws.com/VIDVOrchestrator/1.2.0/VIDVOrchestrator.zip",
+            checksum: "6843a119ed58c5a34aff6d9815899c61710017a4b3eb3a37ba4e2051984011ac"
         ),
         .target(
             name: "VIDVOrchestratorDependencies",
